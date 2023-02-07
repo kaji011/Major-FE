@@ -1,0 +1,109 @@
+*{
+  margin: 8px;
+  padding: 0px;
+  font-family: 'Josefin Slab', serif;
+  box-sizing: border-box;
+}
+
+body{
+    background :white;
+}
+
+ div, form, input, select {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-size: 14px;
+  color: #666;
+  line-height: 22px;
+  }
+  h1{
+  margin: 15px 0 4px;
+  font-weight: 500;
+  }
+
+  span {
+  color: #EB1D36;
+  }
+
+  .testbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  padding: 3px;
+  }
+
+  form {
+  width: 45rem;
+  padding: 20px;
+  background: white;
+  box-shadow: 10px 20px 50px pink;
+  }
+
+  .btn-block {
+  margin-top: 20px;
+  text-align: center;
+  }
+  button {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: red;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  }
+  button:hover {
+  background-color: #EB1D36;
+  }
+  @media (min-width: 568px) {
+  .title-block {
+  display: flex;
+  justify-content: space-between;
+  }
+  .title-block select {
+  width: 30%;
+  margin-bottom: 0;
+  }
+  .title-block input {
+  width: 31%;
+  margin-bottom: 0;
+  }
+  th, td {
+  word-break: keep-all;
+  }
+  }
+
+
+  @keyframes spin {
+    from{
+      transform: rotateY(0deg);
+    }
+    to{
+      transform: rotateY(360deg);
+    }
+  }
+  @-webkit-keyframes spin{
+    from{-webkit-transform: rotateY(0deg);}
+    to{-webkit-transform: rotateY(360deg);}
+  }
+  .bodylogo{
+    width: 100px;
+    height: 125px;
+    position: absolute;
+    right: 50px;
+    top: 10px;
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+
+    -webkit-animation-name: spin;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 5s;
+  }
